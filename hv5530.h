@@ -17,6 +17,7 @@ typedef struct hv5530_struct {
     uint8_t clock_half_cycle;
 } hv5530_t;
 
+void init_hv5530(hv5530_t* chip);
 
 void shift_bytes(hv5530_t* chip, uint64_t data, uint8_t bits);
 

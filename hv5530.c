@@ -2,6 +2,13 @@
 #include <string.h>
 #include "printf.h"
 
+
+void init_hv5530(hv5530_t* chip){
+    chip->write_blank(0); // blank the display
+    shift_bytes(chip, 0, 64);
+    chip->write_blank(1); // de-blank the display
+}
+
 /**
  * @brief data is shifted into the chips MSB first. At the end, LE is pulsed
  * to update the pin registers with the shifted-in value
@@ -45,7 +52,7 @@ void display_number(hv5530_t* chip, float num){
             numeral = s[i] - 48; // get a value 0 thru 9
             buf = buf << 10;
             buf |= (1 << numeral);
-            buf = buf << 1; // shift by one more to skip the decimal point
+            buf = buf << 1; // shift by one more to leave space for decimal point
         }
 
     }
