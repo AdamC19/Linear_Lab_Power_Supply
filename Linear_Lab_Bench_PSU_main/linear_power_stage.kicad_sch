@@ -2117,6 +2117,16 @@
     (uuid ff6fb3e6-7531-4a17-b9e0-e4eccf5f27d2)
   )
 
+  (text "R33 -> 150k" (at 146.05 109.22 0)
+    (effects (font (size 1.5 1.5)) (justify left bottom))
+    (uuid 9ba2ffb4-2fa1-4988-87c4-02c2202a536c)
+  )
+  (text "R16 -> 20k +/- 0.1%\nR18 -> 20k +/- 0.1%\nR19 -> 5k +/- 0.1%\nR20 -> 5k +/- 0.1%\nR21 -> 200k +/- 0.1%\nR22 -> 200k +/- 0.1%"
+    (at 33.02 175.26 0)
+    (effects (font (size 1.5 1.5)) (justify left bottom))
+    (uuid f79df680-ad40-475e-b279-60f28bca2540)
+  )
+
   (label "CS_N" (at 31.75 111.76 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 08918aa8-4da4-431b-8646-249ed962bd5a)
